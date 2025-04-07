@@ -1,2 +1,2 @@
 # AF_ICT_CLASS
-A simple web page for our class
+this project main aim is participating all class students and teacher  open ouer class simple webpage
