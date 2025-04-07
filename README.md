@@ -1,1 +1,2 @@
-#CLASS OF 2025 Websitwe           
+#CLASS OF 2025 Website           
+##Syastem Design and Analysis..........techer Name Lencho Ajima
