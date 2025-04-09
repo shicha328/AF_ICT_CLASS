@@ -1,6 +1,6 @@
        CLASS OF 2025 WEBSITE
    course Name system analysis and Design.......Instructor Name Lu/t Lencho Ajima
-## this course used to  show how stdents system plan ,design,analsis,and implement properly& giving some clue to proper managment of projects.
+## this course used to  show how stdents system plan ,design,analysis,and implement properly& giving some clue to proper managment of projects.
 
 
               The  benefits  of having a class website 
