@@ -1,9 +1,7 @@
-                  ## CLASS OF 2025 WEBSITE
+# CLASS OF 2025 WEBSITE
    ### course Name system analysis and Design.......Instructor Name Lu/t Lencho Ajima
-## this course used to  show how stdents system plan ,design,analysis,and implement properly& giving some clue to proper managment of projects.
-
-
-             #### The  benefits  of having a class website 
+## this course used to  show how stdents system plan ,design,analysis,and implement properly& giving some clue to proper managment of projects
+### The  benefits  of having a class website 
 * Centralized Information:
 • A class website serves as a single source of truth for all course-related information, such as syllabus, schedules, assignments, and announcements. This helps reduce confusion and keeps everyone informed.
 * Improved Communication:
