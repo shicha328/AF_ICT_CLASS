@@ -28,7 +28,7 @@ ul li ul.dropdown li
 }
 ul li ul.dropdown
 {
-    width: 80%;
+    width: 300%;
     background: #8c52ff;
     position: absolute;
     z-index: 999;
