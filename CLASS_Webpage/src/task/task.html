@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Task Manager</title>
+    <link rel="stylesheet" href="task.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Student Task Manager</h1>
+        
+        <div class="student-selector">
+            <select id="studentSelect">
+                <option value="student1">Student 1</option>
+                <option value="student2">Student 2</option>
+                <option value="student3">Student 3</option>
+                <option value="student4">Student 4</option>
+                <option value="student5">Student 5</option>
+                <option value="student6">Student 6</option>
+                <option value="student7">Student 7</option>
+            </select>
+        </div>
+
+        <div class="task-input">
+            <input type="text" id="taskInput" placeholder="Enter new task">
+            <button onclick="addTask()">Add Task</button>
+        </div>
+
+        <h2 class="student-name" id="currentStudent">Student 1's Tasks</h2>
+        <ul class="task-list" id="taskList"></ul>
+    </div>
+
+    <script src="task.js"></script>
+</body>
+</html>

@@ -1,0 +1,200 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+    transition: background 0.3s ease;
+}
+
+.container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    transform: translateY(0);
+    transition: all 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+h1:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(to right, #4CAF50, #45a049);
+    border-radius: 2px;
+}
+
+.student-selector {
+    margin-bottom: 30px;
+}
+
+select {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='%23333' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+}
+
+select:hover, select:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.3);
+    outline: none;
+}
+
+.task-input {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 14px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.2s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.3);
+    outline: none;
+}
+
+button {
+    padding: 12px 24px;
+    background: linear-gradient(to bottom right, #4CAF50, #45a049);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0,0,0,0.15);
+    background: linear-gradient(to bottom right, #45a049, #3d8b40);
+}
+
+button:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.task-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    margin: 10px 0;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    border-left: 4px solid #4CAF50;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    transition: all 0.2s ease;
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.task-item:hover {
+    background-color: #f0f0f0;
+    transform: translateX(5px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.task-item span {
+    font-size: 16px;
+    color: #333;
+    word-break: break-word;
+    flex: 1;
+}
+
+.delete-btn {
+    background: linear-gradient(to bottom right, #ff4444, #cc0000);
+    padding: 8px 16px;
+    font-size: 14px;
+    border-radius: 6px;
+    opacity: 0.9;
+}
+
+.delete-btn:hover {
+    background: linear-gradient(to bottom right, #cc0000, #aa0000);
+    opacity: 1;
+}
+
+.student-name {
+    color: #2c3e50;
+    margin: 20px 0;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    padding: 10px;
+    border-bottom: 2px solid #eee;
+    transition: color 0.3s ease;
+}
+
+/* Empty state */
+.task-list:empty:after {
+    content: "No tasks yet! Add your first task above.";
+    display: block;
+    text-align: center;
+    padding: 30px;
+    color: #999;
+    font-style: italic;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+/* Responsive styling */
+@media (max-width: 600px) {
+    .task-input {
+        flex-direction: column;
+    }
+    
+    button {
+        width: 100%;
+    }
+}
