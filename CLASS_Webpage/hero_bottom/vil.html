@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<!-- Coding by CodingNepal | www.codingnepalweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> Responsive Footer | CodingLab </title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <style>
+        body {
+          margin: 0;
+          font-family: Arial, sans-serif;
+        }
+        header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 10px 20px;
+          background-color: #726e6e;
+          color: #0652f7;
+        }
+        .logo {
+          font-size: 1.5em;
+          font-weight: bold;
+        }
+        nav ul {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+          display: flex;
+        }
+        nav ul li {
+          margin: 0 15px;
+        }
+        nav ul li a {
+          text-decoration: none;
+          color: white;
+          transition: color 0.3s;
+        }
+        nav ul li a:hover {
+          color: #00bcd4;
+        }
+        @media (max-width: 768px) {
+          nav ul {
+            flex-direction: column;
+            align-items: center;
+          }
+          nav ul li {
+            margin: 10px 0;
+          }
+        }
+      </style>
+      <style>
+       
+        .hero {
+          flex: 1;
+          height: 100vh;
+          background: url('https://via.placeholder.com/1920x1080') no-repeat center center/cover;
+          display:flow-root;
+          justify-content: center;
+          align-items: center;
+          color: white;
+          text-align: center;
+        }
+        .hero-content {
+          background: rgba(0, 0, 0, 0.5);
+          padding: 20px;
+          border-radius: 10px;
+        }
+        .hero h1 {
+          font-size: 3rem;
+          margin: 0;
+        }
+        .hero p {
+          font-size: 1.2rem;
+          margin: 10px 0;
+        }
+        .hero a {
+          display: inline-block;
+          margin-top: 15px;
+          padding: 10px 20px;
+          background: #ff5722;
+          color: white;
+          text-decoration: none;
+          border-radius: 5px;
+          font-weight: bold;
+        }
+        .hero a:hover {
+          background: #e64a19;
+        }
+      </style>
+      <style>
+        .hidden-content {
+          display: none;
+        }
+        .see-more-btn {
+          cursor: pointer;
+          color: blue;
+          text-decoration: underline;
+          border: none;
+          background: none;
+          font-size: 1rem;
+        }
+      </style>
+   </head>
+<body>
+    <header>
+        <div class="logo">ICT_class</div>
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <section class="hero">
+        <div class="hero-content">
+          <h1>Welcome to Our OUR ICT_class@2025 Website</h1>
+          <p>Your journey to excellence starts here.</p>
+          <div>
+            <p>
+              This is the visible content. It is always shown to the user.
+            </p>
+            <div id="hiddenContent" class="hidden-content">
+              <p>
+                This is the hidden content that will appear when the "See More" button is clicked.
+                
+                <img src="images/p1.jpg" alt="">
+                <img src="images/p2.jpg" alt="">
+                <img src="images/p3.jpg" alt="">
+                <img src="images/p4.jpg" alt="">
+              </p>
+            </div>
+            <button id="seeMoreBtn" class="see-more-btn">See More</button>
+          </div>
+        
+          <script>
+            const seeMoreBtn = document.getElementById('seeMoreBtn');
+            const hiddenContent = document.getElementById('hiddenContent');
+        
+            seeMoreBtn.addEventListener('click', () => {
+              if (hiddenContent.style.display === 'none' || hiddenContent.style.display === '') {
+                hiddenContent.style.display = 'block';
+                seeMoreBtn.textContent = 'See Less';
+              } else {
+                hiddenContent.style.display = 'none';
+                seeMoreBtn.textContent = 'See More';
+              }
+            });
+          </script>
+        </div>
+      </section>
+
+  <footer>
+    <div class="content">
+      <div class="top">
+        <div class="logo-details">
+          <i class="fab fa-slack"></i>
+          <span class="logo_name">ICT_class</span>
+        </div>
+        <div class="media-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="link-boxes">
+        <ul class="box">
+          <li class="link_name">ETHIO_AF_Academy</li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Contact us</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Get started</a></li>
+        </ul>
+        <ul class="box">
+          <li class="link_name">Services</li>
+          <li><a href="#">basic_military_train</a></li>
+          <li><a href="#">test pilot train</a></li>
+          <li><a href="#">ground_technic school</a></li>
+          <li><a href="#">candidate_train</a></li>
+          
+        </ul>
+        <ul class="box">
+          <li class="link_name">Account</li>
+          <li><a href="#">Profile</a></li>
+          <li><a href="#">My account</a></li>
+          <li><a href="#">Pre_frence</a></li>
+          <li><a href="#">Purchase</a></li>
+        </ul>
+        <ul class="box">
+          <li class="link_name">DEPARTMENT</li>
+          <li><a href="#">ICT</a></li>
+          <li><a href="#">APG</a></li>
+          <li><a href="#">AVIATION</a></li>
+          <li><a href="#">EW</a></li>
+          <li><a href="#">mts</a></li>
+          <li><a href="#">management</a></li>
+        </ul>
+        <ul class="box input-box">
+          <li class="link_name">Subscribe</li>
+          <li><input type="text" placeholder="Enter your email"></li>
+          <li><input type="button" value="Subscribe"></li>
+        </ul>
+      </div>
+    </div>
+    <div class="bottom-details">
+      <div class="bottom_text">
+        <span class="copyright_text"> © Copyright 2025 <a href="#">ICt_class</a>All rights reserved</span>
+        <span class="policy_terms">
+          <a href="#">Privacy policy</a>
+          <a href="#">Terms & condition</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
